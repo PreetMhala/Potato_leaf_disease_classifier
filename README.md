@@ -1,38 +1,58 @@
-🥔 Potato Leaf Disease Classifier :- Enhancing crop productivity with fined-tuned deep convolution neural network for Potato leaf disease detection
+# 🥔 Potato Leaf Disease Classifier  
+## *Enhancing crop productivity with fine-tuned deep convolution neural network for Potato leaf disease detection*
 
-Deep learning-based classification of six potato leaf diseases using transfer learning (DenseNet201, ResNet152V2, NasNetMobile), data augmentation, and regularization.
-📄 Published in: Expert Systems with Applications (Impact Factor: 7.5)
-🔗 DOI: 10.1016/j.eswa.2024.126066
+A deep learning-based system to classify six major potato leaf diseases using transfer learning (DenseNet201, ResNet152V2, NasNetMobile), strategic data augmentation, and L2 regularization.
 
-🔍 Abstract
-Potato plants (Solanum tuberosum) are prone to various diseases that result in substantial economic losses for farmers. This research presents a deep learning-based approach to accurately detect and classify six distinct diseases affecting potato leaves: bacteria, viruses, fungi, phytophthora, pests, and nematodes.
+📄 **Published in:** *Expert Systems with Applications* (Impact Factor: **7.5**)  
+🔗 **DOI:** [10.1016/j.eswa.2024.126066](https://doi.org/10.1016/j.eswa.2024.126066)
 
-To address class imbalance, we employed strategic data augmentation, L2 regularization, and transfer learning. Three pre-trained CNNs—DenseNet201, ResNet152V2, and NasNetMobile—were fine-tuned on a diverse real-world dataset of 3,076 leaf images.
-📂 Access the dataset here: https://doi.org/10.17632/ptz377bwb8.1
+---
 
-DenseNet201 achieved the highest accuracy of 77.14% on the original dataset.
+### 🔍 **Abstract**
 
-With data augmentation and k-fold cross-validation, it reached 81.31%—a 4.17% improvement over baseline and 7.68% better than prior work.
+Potato plants (*Solanum tuberosum*) are prone to various diseases that result in substantial economic losses for farmers.  
+This research presents a **deep learning-based approach** to accurately detect and classify **six distinct diseases** affecting potato leaves:
+- Bacteria
+- Viruses
+- Fungi
+- Phytophthora
+- Pests
+- Nematodes
 
-NasNetMobile and ResNet152V2 showed performance degradation due to overfitting and poor generalization.
+To address **class imbalance**, we employed:
+- 🎨 Strategic Data Augmentation  
+- 🔒 L2 Regularization  
+- 🧠 Transfer Learning  
 
-This approach offers a scalable, field-deployable solution for real-world agricultural diagnostics, helping reduce crop losses and promote sustainable farming.
+Three pre-trained CNNs were fine-tuned on a **diverse real-world dataset of 3,076 leaf images**.  
+📂 **Dataset Access:** [https://doi.org/10.17632/ptz377bwb8.1](https://doi.org/10.17632/ptz377bwb8.1)
 
-🌟 Key Contributions
-Deep learning framework for classifying six major potato leaf diseases with improved accuracy, scalability, and class balance.
+🚀 **Results:**
+- DenseNet201 achieved **77.14%** accuracy on the original dataset.
+- With augmentation + k-fold cross-validation, accuracy improved to **81.31%**
+  - 📈 4.17% boost over baseline  
+  - 🔬 7.68% better than prior work
 
-Strategic data augmentation (Basic + Combinational) simulating real-world image capturing.
+⚠️ NasNetMobile and ResNet152V2 showed performance degradation due to overfitting and low generalization.
 
-Use of precision, recall, F1-score, and accuracy for robust evaluation.
+✅ **Conclusion:**  
+This approach provides a **scalable, field-deployable** solution for agricultural diagnostics—supporting **sustainable farming** and minimizing crop loss.
 
-Hyperparameter tuning for model optimization in agricultural settings.
+---
 
-Comparative study of DenseNet201, ResNet152V2, and NasNetMobile under 3 training configurations.
+### 🌟 **Key Contributions**
 
-Application of L2 regularization and early stopping to reduce overfitting.
+- ✅ Deep learning framework for classifying six major potato leaf diseases with **improved accuracy, scalability**, and **class balance**.
+- 🌀 **Strategic data augmentation** (basic + combinational) simulating real-world image capture conditions.
+- 📊 Evaluation using **Precision, Recall, F1-score, Accuracy** for robust performance measurement.
+- 🛠️ **Hyperparameter tuning** for optimization in agricultural settings.
+- 🔍 Comparative study of **DenseNet201, ResNet152V2, NasNetMobile** across **3 training configurations**.
+- 🧱 Applied **L2 regularization** and **early stopping** to reduce overfitting.
+- 🌾 Broader disease spectrum than prior works—enhancing **generalizability** across diverse leaf conditions.
 
-A broader disease spectrum compared to prior works, enhancing generalizability across diverse leaf conditions.
+---
 
-🧠 Methodology Flowchart
+### 🧠 **Methodology Flowchart**
 
-
+*(Image to be uploaded in repository)*  
+`📌 Placeholder: Methodology_Flowchart.png`
