@@ -52,7 +52,115 @@ This approach provides a **scalable, field-deployable** solution for agricultura
 
 ---
 
-### 🧠 **Methodology Flowchart**
 
-*(Image to be uploaded in repository)*  
-`📌 Placeholder: Methodology_Flowchart.png`
+## 🧠 Methodology Flowchart  
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/Methodology_flowchart.png" width="70%" alt="Methodology Flowchart"/>
+</p>  
+
+This flowchart illustrates the overall pipeline of our proposed potato leaf disease classification system, covering **data preprocessing, augmentation, model training, evaluation, and deployment readiness**.
+
+---
+
+## 📊 Dataset Distribution (Before & After Augmentation)  
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/Class_distribution_original.png" width="45%" alt="Original Class Distribution"/>
+  <img src="Diagrams_Tables_Figures_Graphs/class_distribution_post_augmentation.png" width="45%" alt="Post-Augmentation Class Distribution"/>
+</p>  
+
+- The original dataset contained **3,076 images** with severe class imbalance.  
+- Through **strategic augmentations** (rotations, flips, color jitter, etc.), underrepresented classes were balanced, resulting in a **more uniform dataset** that improved model generalization.  
+
+---
+
+## ⚙️ Algorithm  
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/algorithm.png" width="60%" alt="Algorithm Flow"/>
+</p>  
+
+The above diagram highlights the **training algorithm**, including:  
+1. Input preprocessing  
+2. Augmentation strategies  
+3. Transfer learning with DenseNet201, ResNet152V2, and NasNetMobile  
+4. Optimization with **early stopping + L2 regularization**  
+
+---
+
+## 📈 DenseNet201 Results  
+
+### 🔹 Training & Validation Trends  
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/training_accuracy_all_models.png" width="45%" alt="Training Accuracy"/>
+  <img src="Diagrams_Tables_Figures_Graphs/validation_accuracy_all_models.png" width="45%" alt="Validation Accuracy"/>
+</p>  
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/training_loss_all_models.png" width="45%" alt="Training Loss"/>
+  <img src="Diagrams_Tables_Figures_Graphs/validation_loss_all_models.png" width="45%" alt="Validation Loss"/>
+</p>  
+
+- DenseNet201 consistently outperformed the other models in terms of **validation accuracy and reduced overfitting**.  
+- ResNet152V2 and NasNetMobile showed stronger signs of **performance degradation**.  
+
+### 🔹 Confusion Matrices (DenseNet201)  
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/conf_matx_denseNet201.png" width="30%" alt="DenseNet201 Confusion Matrix"/>
+  <img src="Diagrams_Tables_Figures_Graphs/conf_matx_DenseNet201_earlystop.png" width="30%" alt="DenseNet201 + Early Stopping"/>
+  <img src="Diagrams_Tables_Figures_Graphs/conf_matrix_DenseNet201_earlystop_l2norm.png" width="30%" alt="DenseNet201 + Early Stopping + L2 Norm"/>
+</p>  
+
+Confusion matrices demonstrate that **augmentation + regularization** improved classification across minority classes (Bacteria, Nematodes) while reducing misclassifications.  
+
+---
+
+## 📝 Classification Report (DenseNet201)  
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/classification_report_DenseNet201.png" width="70%" alt="DenseNet201 Classification Report"/>
+</p>  
+
+The report shows precision, recall, and F1-scores across all six disease categories. DenseNet201 achieved **balanced performance**, highlighting improvements after augmentation.  
+
+---
+
+## 📊 Class-wise Accuracy (DenseNet201)  
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/class_wise_accuracy_DenseNet201.png" width="70%" alt="Class-wise Accuracy"/>
+</p>  
+
+- Accuracy improved significantly for **minority classes** after augmentation.  
+- L2 regularization stabilized training, yielding better consistency across folds.  
+
+---
+
+## 🔄 K-Fold Cross Validation  
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/k_fold_validation_accuracy.png" width="45%" alt="K-Fold Validation Accuracy"/>
+  <img src="Diagrams_Tables_Figures_Graphs/k_fold_validation_loss.png" width="45%" alt="K-Fold Validation Loss"/>
+</p>  
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/k_fold_accuracies_all_5.png" width="60%" alt="K-Fold Accuracies"/>
+</p>  
+
+K-fold validation demonstrated **robust generalization**, confirming that DenseNet201 with augmentation + regularization consistently outperforms the baseline.  
+
+---
+
+## 📑 Comparative Study  
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/comparative_study_table.png" width="70%" alt="Comparative Study Table"/>
+</p>  
+
+Compared to prior work, our proposed system achieved:  
+- **+4.17% boost over baseline** using augmentation  
+- **+7.68% improvement** compared to existing state-of-the-art  
+- Better performance on underrepresented disease classes  
+
+---
+
