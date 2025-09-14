@@ -51,6 +51,32 @@ This approach provides a **scalable, field-deployable** solution for agricultura
 - 🌾 Broader disease spectrum than prior works—enhancing **generalizability** across diverse leaf conditions.
 
 ---
+---
+## ⚡ Getting Started  
+
+### 1️⃣ Installation  
+
+Clone this repository and install the required dependencies:  
+
+```bash
+git clone https://github.com/username/Potato_leaf_disease_classifier.git
+cd Potato_leaf_disease_classifier
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+# Run training with augmentation + early stopping + L2 regularization
+```bash
+jupyter notebook Potato_leaf_Augmentation_early_stop_l2_regularization.ipynb
+```
+
+# Run stratified k-fold cross-validation
+```bash
+jupyter notebook Potato_leaf_kfold_stratified_split.ipynb
+```
+
+
 
 
 ## 🧠 Methodology Flowchart  
