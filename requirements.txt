@@ -1,0 +1,10 @@
+split-folders
+matplotlib
+seaborn
+numpy
+pandas
+opencv-python
+Pillow
+tensorflow
+scikit-learn
+wandb
