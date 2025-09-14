@@ -114,6 +114,39 @@ The above diagram highlights the **training algorithm**, including:
 
 ---
 
+---
+
+## 🌱 Class-wise Augmentation Samples  
+
+To address **class imbalance**, we applied strategic combinational data augmentations on underrepresented classes.  
+Below are examples of augmented images for each disease category:
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/bacteria_class_after_augmentation.png" width="45%" alt="Bacteria Class After Augmentation"/>
+  <img src="Diagrams_Tables_Figures_Graphs/fungi_class_after_augmentation.png" width="45%" alt="Fungi Class After Augmentation"/>
+</p>
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/virus_class_after_augmentation.png" width="45%" alt="Virus Class After Augmentation"/>
+  <img src="Diagrams_Tables_Figures_Graphs/Phytophthora_class_after_augmentation.png" width="45%" alt="Phytophthora Class After Augmentation"/>
+</p>
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/pest_class_after_augmentation.png" width="45%" alt="Pest Class After Augmentation"/>
+  <img src="Diagrams_Tables_Figures_Graphs/Nematode_class_after_augmentation.png" width="45%" alt="Nematode Class After Augmentation"/>
+</p>
+
+<p align="center">
+  <img src="Diagrams_Tables_Figures_Graphs/healthy_class_after_augmentation.png" width="45%" alt="Healthy Class After Augmentation"/>
+</p>  
+
+- Each class was **augmented proportionally** to balance the dataset.  
+- This process **mitigated bias** towards majority classes and improved model performance on underrepresented diseases.  
+- Augmentations were designed to **simulate real-world variability**, such as lighting changes and leaf orientation.  
+
+---
+
+
 ## 📈 DenseNet201 Results  
 
 ### 🔹 Training & Validation Trends  
